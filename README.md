@@ -1,4 +1,5 @@
 # LabStats Client
+[![Actions Status](https://github.com/philip-bui/labstats-client/workflows/build/badge.svg)](https://github.com/philip-bui/labstats-client/actions)
 
 [LabStats](https://labstats.com/) tracks when, where, and how long students are logged on to hardware resources in computer labs. It allows schools to maximize IT budget by discovering where you can expand, reduce, or eliminate hardware and software resources.
 
@@ -15,9 +16,27 @@
 
 ### Maven
 
+Set up Apache Maven to authenticate to GitHub Package Registry by editing your ~/.m2/settings.xml. For more information, see "[Authenticating to GitHub Package Registry](https://help.github.com/en/github/managing-packages-with-github-package-registry/configuring-apache-maven-for-use-with-github-package-registry#authenticating-to-github-package-registry)".
+
+```xml
+<dependencies>
+  <dependency>
+    <groupId>com.philipbui.labstats</groupId>
+    <artifactId>labstats-client</artifactId>
+    <version>1.0.0</version>
+  </dependency>
+</dependencies>
+```
+
 ### Gradle
 
+Set up Gradle to authenticate to GitHub Package Registry by editing your build.gradle or build.gradle.kts file. For more information, see "[Authenticating to GitHub Package Registry](https://help.github.com/en/github/managing-packages-with-github-package-registry/configuring-gradle-for-use-with-github-package-registry#authenticating-to-github-package-registry)".
 
+```gradle
+dependencies {
+    implementation("com.philipbui.labstats:labstats-client:1.0.0")
+}
+```
 
 ## Usage
 
